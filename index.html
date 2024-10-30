@@ -1,101 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
-    <style>
-        /* Navbar styling */
-        nav {
-            background: #156faa;
-            /* Background color for the navbar */
-            color: rgb(255, 255, 255);
-            /* Text color */
-            padding: 15px;
-            /* Padding inside the navbar */
-            display: flex;
-            /* Flexbox layout to align items */
-            justify-content: space-between;
-            /* Space between title and links */
-            align-items: center;
-            /* Vertically center the items */
-            margin-bottom: 20px;
-            /* Space below the navbar */
-        }
-
-        h1 {
-            margin: 0;
-            /* Remove default margin */
-            font-size: 24px;
-            /* Font size for the website title */
-        }
-
-        #nav-ul {
-            list-style-type: none;
-            /* Remove default list bullets */
-            padding: 0;
-            /* Remove default padding */
-            margin: 0;
-            /* Remove default margin */
-            display: flex;
-            /* Flexbox layout for horizontal list items */
-        }
-
-        .nav-li {
-            margin: 0 15px;
-            /* Space between each navigation item */
-        }
-
-        a {
-            color: white;
-            /* Link text color */
-            text-decoration: none;
-            /* Remove underline from links */
-        }
-
-        /* Add a hover effect for the navigation links */
-        a:hover {
-            color: #ffeb3b;
-            /* Change color on hover */
-        }
-        .main {
-            background-color: green;
-            margin-left: 15%;
-            margin-right: 15%;
-            margin-top: 2%;
-            padding: 2%;
-        }
-
-        img {
-            width: 50%;
-        }
-    </style>
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <h1> Ty LeBoeuf</h1>
-        <ul id="nav-ul">
-            <li class="nav-li"><a href="#">Home</a></li>
-            <li class="nav-li"><a href="#">Portfolio</a></li>
-        </ul>
-    </nav>
-
-    <div class="main">
-        <img src="https://s3.us-east-1.amazonaws.com/assets.mapleleaffarms.com/content/Pages/4-Farm-raised-Duck/Duck-Breeds/_716x416_crop_center_85_none/white-pekin-duck-breed.jpg">
-        <h1>Ty LeBoeuf</h1>
-        <h3>interests:</h3>
+    <div>
+        <nav>
+        <h1>MyWebsite</h1>
         <ul>
-            <li>hello</li>
+            <li>
+          <a href="index.html"> Home </a>
+        </li>
+        <li>
+          <a href="portfolio.html"> Portfolio </a>
+      </li>
         </ul>
+        </nav>
+
+        <main>
+            <!-- Sidebar section -->
+             <div>
+              <img src=https://s3.us-east-1.amazonaws.com/assets.mapleleaffarms.com/content/Pages/4-Farm-raised-Duck/Duck-Breeds/_716x416_crop_center_85_none/white-pekin-duck-breed.jpg
+             </div>
+            <div>
+                <h2>Ty</h2>
+                <p>Student</p>
+            </div>
+                <!-- Interests section -->
+            <h3>Interests</h3>
+            <ul>
+                <li>Interests: I like game</li>
+                <li>Interests: I like computer</li>
+                <li>Interests: I like sports</li>
+            </ul>
+            <!-- Content section -->
+            <div>
+        </main>
     </div>
-
-    <p>
-        <a href="platformerJS.html">link to platformer</a>
-    </p>
-
-    <a href="clicker.html">link to clicker</a>
 </body>
 
 </html>
