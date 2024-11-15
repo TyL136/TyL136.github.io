@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>eventListener</title>
+</head>
+
+<body>
+    <p id="kittens">cat</p> 
+    <img id="cat" src="https://ih1.redbubble.net/image.3800727516.4531/raf,360x360,075,t,fafafa:ca443f4786.jpg">
+</body>
+
+</html>
+
+<script>
+    document.getElementById("kittens").addEventListener("click",kittens)
+        function kittens(){
+            ("kittens")
+            document.getElementById("kittens").style.color = "red";
+        }
+         
+    document.getElementById("cat").addEventListener("click",cat)
+    function cat(){
+        alert("cat")
+    }
+
+    document.getElementById("cat").addEventListener("mouseover",enlarge)
+    function enlarge(){
+      
+        document.getElementById("cat").style.height="1000px"
+    }
+
+
+</script> 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,40 @@
             margin-left: 50%;
             margin-top: 20%;
             width: 400px;
-            
+
         }
     </style>
 </head>
+
 <body>
-    <button type="button">Click Me!</button>
-    <img id="duck" src="https://th.bing.com/th/id/R.d1d4de86aae4effa4187b0ef516a19bd?rik=0CzZnxVyKNr8uw&riu=http%3a%2f%2fwww.whateats.com%2fwp-content%2fuploads%2f2010%2f04%2fduck-jaroslav-novak.jpt_.jpg&ehk=YBOzCy4GFhGwyRgrCHQ%2fbJHM2KKxvF9W0iU%2bcEOukEk%3d&risl=&pid=ImgRaw&r=0">
+    <button id="button" type="button">Upgrade!</button>
+    <img id="cat" src="https://ih1.redbubble.net/image.3800727516.4531/raf,360x360,075,t,fafafa:ca443f4786.jpg">
     <p id="score">score:0</p>
-</body> 
+</body>
+
 </html>
 
 
 
 
 <script>
+    //
+    document.getElementById("cat").addEventListener("click", up)
+    var score = 0 
+    var increasescore = 0
+    function up() {
+        //click the image and adds 1 to the score
+        score = score + 1
+        document.getElementById("score").innerHTML = "cat " + score;
+        console.log(score)
+    }
+   
+    document.getElementById("button").addEventListener("click",upgrade)
+    function upgrade() {
+        //click the image and adds 2 to the score 
+        score = score + 2
+        document.getElementById("increasescore").innerHTML = "cat" + score;
+        console.log(score)
 
-    document.getElementById("duck").addEventListener("click",up)
-var score=0
-function up(){
-score=score + 1
-document.getElementById("score").innerHTML = "ducks = "+ score;
-console.log(score)
-}
-
-</script> 
-
-    
+    }
+</script>
