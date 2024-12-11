@@ -27,23 +27,29 @@
 
 
 <script>
-    //
+
     document.getElementById("cat").addEventListener("click", up)
     var score = 0 
-    var increasescore = 0
+    var upgradescore = 1
+
     function up() {
         //click the image and adds 1 to the score
-        score = score + 1
+        score = score + upgradescore
         document.getElementById("score").innerHTML = "cat " + score;
-        console.log(score)
     }
    
     document.getElementById("button").addEventListener("click",upgrade)
     function upgrade() {
-        //click the image and adds 2 to the score 
-        score = score + 2
-        document.getElementById("increasescore").innerHTML = "cat" + score;
-        console.log(score)
+        //if score is greater than 5 increase upgradescore from 1 to 2 score lower by 5
+        
+        if (score >= 5){
+         upgradescore = upgradescore+2
+         score = score -5
+        }
+        document.getElementById("score").innerHTML = "cat" + score;
 
+        
     }
+
+
 </script>
